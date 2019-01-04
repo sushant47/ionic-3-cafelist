@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-navbar hideBackButton>
+    <ion-title>
+      Extentia Cafe Outlets
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="background">
+  <div class="login-div">
+
+    <ion-row>
+      <ion-col>
+        <ion-list inset>
+
+          <ion-item class="login-input">
+            <ion-label floating>Username</ion-label>
+            <ion-input type="email" [(ngModel)]="userLoginData.emailId"></ion-input>
+          </ion-item>
+
+          <ion-item class="login-input">
+            <ion-label floating>Password</ion-label>
+            <ion-input type="password" [(ngModel)]="userLoginData.password"></ion-input>
+          </ion-item>
+
+        </ion-list>
+      </ion-col>
+    </ion-row>
+
+  </div>
+
+
+  <button class="login-button" [disabled]="!userLoginData.emailId || !userLoginData.password" (click)="login()" ion-button block color="dark"
+    outline>Login</button>
+
+  <button class="signUp-button" (click)="goBackSignUp()" ion-button block color="dark" outline>Sign Up</button>
+
+
+</ion-content>

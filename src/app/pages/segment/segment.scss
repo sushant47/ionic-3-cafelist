@@ -1,0 +1,30 @@
+ 
+.map-wrapper{
+    height: 90%;
+    width: 100%;
+}
+.ios, .md {
+ 
+    page-segment {
+ 
+      .scroll {
+        height: 100%
+      }
+ 
+      #map {
+        width: 100%;
+        height: 100%;
+      }
+ 
+ .ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.logout{
+  margin-left: 10px;
+}
+    }
+ 
+}
