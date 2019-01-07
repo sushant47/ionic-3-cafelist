@@ -8,6 +8,7 @@ import { URL } from './pages/constants/constants';
 import { UserInputData } from './pages/userinputdata/UserInputData';
 import { HttpService } from './pages/services/http.service';
 import { SignUp } from './pages/signup/signup';
+import { Login } from './pages/login/login';
 
 let loading: any;
 let lastTimeBackPress = 0;
@@ -106,7 +107,7 @@ export class MyApp implements OnInit {
     //   loading.dismiss();
     //   this.rootPage = Login;
     // }
-    this.rootPage = SignUp;
+    this.rootPage = Login;
   }
 
   registerDevice(): any {
